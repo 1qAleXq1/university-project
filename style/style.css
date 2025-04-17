@@ -33,6 +33,7 @@ nav ul li a {
 section {
     padding: 40px;
     text-align: center;
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .card {
@@ -43,6 +44,12 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 250px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+    background-color: #f1e4d1;
+    transform: translateY(-5px);
 }
 
 .myth {
@@ -59,4 +66,15 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: 20px;
+}
+
+/* Анімації */
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
 }
